@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - MixMusicLive
+name: Build and deploy Node.js app to Azure Web App - mixmusiclive
 
 on:
   push:
@@ -50,7 +50,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'MixMusicLive'
+          app-name: 'mixmusiclive'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E9160F63D0D64CD387C78698644D58D5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4B2BAFA62CCD40BDB3F495C3BFBB0782 }}
           package: .
