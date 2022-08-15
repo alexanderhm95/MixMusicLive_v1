@@ -29,7 +29,7 @@ export class InjectSessionInterceptor implements HttpInterceptor {
       return next.handle(newRequest);
 
     } catch (e) {
-      console.log('🔴🔴🔴 Ojito error', e)
+      console.log('Error al autenticarse', e)
       return next.handle(request);
     }
   }

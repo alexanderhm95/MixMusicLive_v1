@@ -17,7 +17,7 @@ const routes: Routes = [
   },
   {
     path: '**',//TODO 404 cuando no existe la ruta
-    redirectTo: '/tracks'
+    redirectTo: '/auth'
   }
 ];
 
